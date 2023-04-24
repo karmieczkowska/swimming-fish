@@ -25,5 +25,60 @@
     border-radius: 50%;
     position: absolute;
     top: 35px;
-    left: 28px;
+    left: 25px;
+}
+
+.mouth {
+    width: 15px;
+    border-bottom: 1.4px solid orange;
+    position: absolute;
+    border-radius: 0px 20px 0px 0px;
+    top: 55px;
+    left: 0px;
+}
+
+.gill {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 18px;
+    left: 0;
+    border-radius: 50px;
+    border-right: 1px solid #ffde4a;
+    filter: drop-shadow(2px 0px 2px #d47100);
+}
+
+.tail-1 {
+    width: 70px;
+    height: 60px;
+    background: linear-gradient(to top right, pink, powderblue);
+    border-radius: 50px 0px;
+    position: absolute;
+    z-index: -1;
+    left: 160px;
+}
+
+.tail-2 {
+    width: 50px;
+    height: 60px;
+    background: linear-gradient(to top right, pink, powderblue);
+    border-radius: 0px 50px;
+    position: absolute;
+    z-index: -2;
+    right: -35px;
+    bottom: 0px;
+}
+
+@keyframes anim1 {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateY(30deg);
+    }
+
+    100% {
+        transform: rotateY(0deg);
+    }
 }
